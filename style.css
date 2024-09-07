@@ -1,0 +1,242 @@
+/* Importa a fonte SUSE do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "SUSE", sans-serif; /* Define a fonte padrão */
+    font-optical-sizing: auto; /* Permite que o navegador ajuste o tamanho da fonte */
+    background-color: #14213D; /* Cor de fundo principal */
+    display: flex; /* Utiliza o modelo de layout Flexbox */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos   
+   verticalmente */
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove o padding padrão do corpo */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo ultrapassar a altura da viewport */
+  }
+  
+  /* Estiliza o cabeçalho */
+header {
+    position: fixed; /* Posiciona o cabeçalho de forma fixa na parte superior da página */
+    top: 0; /* Posiciona o cabeçalho na parte superior da viewport */
+    left: 0; /* Posiciona o cabeçalho na extremidade esquerda da viewport */
+    width: 100%; /* Ocupa 100% da largura da viewport */
+    background-color: #022b3a; /* Cor de fundo do cabeçalho */
+    z-index: 999; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra leve abaixo do cabeçalho */
+}
+  
+  /* Estiliza o título principal (h1) */
+h1 {
+    font-size: 3rem; /* Define o tamanho da fonte */
+    color: #FCA311; /* Define a cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem; /* Adiciona um espaço interno */
+}
+
+
+h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #FFFFFF; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: calc(50vh - 10rem); 
+}
+
+h3 {
+    font-size: 1rem; /* Tamanho da fonte */   
+    font-weight: 200;
+    color: #FFFFFF; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+h4 {
+    font-size: 0.9rem; /* Tamanho da fonte */   
+    font-weight: 100;
+    color: #e5383b; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 2rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 35rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #E5E5E5; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #3C6E71; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex;
+    width: 60rem;
+    height: calc(100vh - 10rem); /* Calcula a altura dinamicamente, subtraindo a altura do header */
+    overflow-y: auto;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-top: 5rem; /* Adiciona uma margem para evitar sobreposição */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  width: 80%;
+  background: #FFFFFF;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+.descricao-aviso {
+    color: #e5383b; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+
+footer {
+    background-color: #212529; /* Cor de fundo do rodapé */
+    color: #F5F7F8; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0.85rem; /* Tamanho da fonte */
+}
+
+footer a {
+    color: #007bff; /* Cor azul padrão para os links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+footer a:hover {
+    color: #5555ff; /* Cor azul mais escuro ao passar o mouse */
+}
+
+footer a:visited {
+    color: #8a2be2; /* Cor roxa para links já visitados */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        font-size: 0.7rem;
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 30vh; /* Ajusta a altura da caixa de resultados em telas menores */
+        overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+        margin-top: 5rem; /* Ajusta o espaçamento para o header */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    h3 {
+        font-size: 1rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    h4 {
+        font-size: 0.8rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+        
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 30vh; /* Ajusta a altura da caixa de resultados em telas menores */
+        overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+        margin-top: 5rem; /* Ajusta o espaçamento para o header */
+    }
+
+    h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    h3 {
+        font-size: 0.85rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    h4 {
+        font-size: 0.75rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.7rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
