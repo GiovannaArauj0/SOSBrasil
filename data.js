@@ -27,7 +27,7 @@ let servicosEmergencia = [
       abrangencia: "Estadual",
       categoria: "Direitos Humanos",
       horarioAtendimento: "Verificar horário de funcionamento local",
-      tags: "mulher feiminicídio feminicidio assedio sexual abuso violencia violência"
+      tags: "mulher feiminicídio feminicidio assedio sexual abuso violencia violência estupro"
     },
     {
       nome: "Disque Denúncia",
@@ -47,7 +47,7 @@ let servicosEmergencia = [
       abrangencia: "Nacional",
       categoria: "Saúde Mental",
       horarioAtendimento: "24 horas",
-      tags: "suicídio suicidio emocional crise psicológica psicologica"
+      tags: "suicídio suicidio emocional crise psicológica psicologica cvv"
     },
     {
       nome: "Polícia Militar",
@@ -57,7 +57,7 @@ let servicosEmergencia = [
       abrangencia: "Estadual",
       categoria: "Segurança",
       horarioAtendimento: "24 horas",
-      tags: "policia polícia policias crime crimes emergencia emergencias acidente transito trânsito ordem"
+      tags: "pm policia polícia policias crime crimes emergencia emergencias acidente transito trânsito ordem carro moto"
     },
     {
       nome: "Polícia Rodoviária Federal",
@@ -67,7 +67,7 @@ let servicosEmergencia = [
       abrangencia: "Nacional",
       categoria: "Segurança",
       horarioAtendimento: "24 horas",
-      tags: "policia polícia policias crime crimes emergencia emergencias acidente transito trânsito rodovia estrada federal"
+      tags: "prf policia polícia policias crime crimes emergencia emergencias acidente transito trânsito rodovia estrada federal carro moto caminhão"
     },
     {
       nome: "SAMU",
@@ -87,7 +87,7 @@ let servicosEmergencia = [
       abrangencia: "Estadual",
       categoria: "Segurança e Saúde",
       horarioAtendimento: "24 horas",
-      tags: "incendio fogo fumaca fumaça resgate salvamento desastre socorro vazamento gas explosao explosão"
+      tags: "enchente desabamento desmoronamento incendio queimada fogo fumaca fumaça resgate salvamento desastre arvore árvore socorro vazamento gas explosao explosão bombeiro"
     },
     {
       nome: "Polícia Civil",
@@ -107,7 +107,7 @@ let servicosEmergencia = [
       abrangencia: "Estadual",
       categoria: "Segurança",
       horarioAtendimento: "24 horas",
-      tags: "policia polícia policias crime crimes emergencia emergencias acidente transito trânsito rodovia estrada estadual"
+      tags: "pre policia polícia policias crime crimes emergencia emergencias acidente transito trânsito rodovia estrada estadual carro moto caminhão"
     },
     {
       nome: "Defesa Civil",
@@ -117,6 +117,6 @@ let servicosEmergencia = [
       abrangencia: "Municipal ou Estadual",
       categoria: "Segurança",
       horarioAtendimento: "24 horas",
-      tags: "defesa civil desastre natural"
+      tags: "defesa civil desastre natural enchente desabamento desmoronamento"
     }
   ];
